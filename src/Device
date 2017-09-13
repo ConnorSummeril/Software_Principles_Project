@@ -23,8 +23,6 @@ public class Device {
      * Character indicator of true.
      **/
     public static final char VALUE_TRUE = 'T';
-    private boolean[] bitArray = new boolean[DEFAULT_SIZE];
-    private int thebits = DEFAULT_PEEKS;
 
     /**
      * Construct device using defaults.
@@ -58,9 +56,8 @@ public class Device {
      *                    via peek or set via poke.
      */
     public Device(boolean[] intialBits, int bitsPerPeek) {
-
         for(int i = 0; i < DEFAULT_SIZE; i++) {
-            bitArray[i] = intialBits[i];
+            bitArray[i] = initialBits[i];
         }
 
         if(bitsPerPeek == DEFAULT_PEEKS) {
@@ -128,7 +125,7 @@ public class Device {
 
             System.out.println("===========================");
 
-          }
+
             return false;
     }
 
@@ -140,9 +137,9 @@ public class Device {
      * @return a pattern that discloses the values
      * of the indicated bits
      */
-  //  public CharSequence peek(CharSequence pattern) {
-  //      return null;
-  //  }
+    public CharSequence peek(CharSequence pattern) {
+        return null;
+    }
 
     /**
      * Poke bits into device.
@@ -150,48 +147,53 @@ public class Device {
      * @param pattern indicator of values
      *                of bits to poke
      */
-    public CharSequence peek(CharSequence pattern) {
+    public void poke(CharSequence pattern) {
         System.out.println(pattern);
+        //System.out.println(pattern.charAt(1));
+        //System.out.println(pattern.charAt(5));
 
         CharSequence returnVal1 = "-";
         CharSequence returnVal2 = "-";
         CharSequence returnVal3 = "-";
         CharSequence returnVal4 = "-";
 
-        if(pattern.charAt(0) == '?'){
+        if(pattern.charAt(1) == '?') {
             if(bitArray[0] == false) {
                 returnVal1 =  String.valueOf(VALUE_FALSE);
-                
+                //return returnVal1;
             } else {
                 returnVal1 = String.valueOf(VALUE_TRUE);
-                
+                //return returnVal1;
             }
         }
 
-        if(pattern.charAt(1) == '?'){
+        if(pattern.charAt(3) == '?') {
             if(bitArray[1] == false) {
                 returnVal2 =  String.valueOf(VALUE_FALSE);
-                
+                //return returnVal1;
             } else {
                 returnVal2 = String.valueOf(VALUE_TRUE);
-                
+                //return returnVal1;
             }
         }
 
-        if(pattern.charAt(2) == '?'){
+        if(pattern.charAt(5) == '?') {
             if(bitArray[2] == false) {
                 returnVal3 =  String.valueOf(VALUE_FALSE);
-                
+                //return returnVal3;
             } else {
                 returnVal3 = String.valueOf(VALUE_TRUE);
-                            }
+                //return returnVal3;
+            }
         }
 
-        if(pattern.charAt(3) == '?'){
+        if(pattern.charAt(7) == '?') {
             if(bitArray[3] == false) {
                 returnVal4 =  String.valueOf(VALUE_FALSE);
+                //return returnVal3;
             } else {
                 returnVal4 = String.valueOf(VALUE_TRUE);
+                //return returnVal3;
             }
         }
 
@@ -206,28 +208,28 @@ public class Device {
         CharSequence returnVal3 = "-";
         CharSequence returnVal4 = "-";
 
-        if(pattern.charAt(0) == 'T'){
+        if(pattern.charAt(1) == 'T') {
             if(bitArray[0] == false) {
                 returnVal1 = String.valueOf(VALUE_TRUE);
                 bitArray[0] = true;
             }
         }
 
-        if(pattern.charAt(1) == 'T'){
+        if(pattern.charAt(3) == 'T') {
             if(bitArray[1] == false) {
                 returnVal2 = String.valueOf(VALUE_TRUE);
                 bitArray[1] = true;
             }
         }
 
-        if(pattern.charAt(2) == 'T'){
+        if(pattern.charAt(5) == 'T') {
             if(bitArray[2] == false) {
                 returnVal3 = String.valueOf(VALUE_TRUE);
                 bitArray[2] = true;
             }
         }
 
-        if(pattern.charAt(3) == 'T'){
+        if(pattern.charAt(7) == 'T') {
             if(bitArray[3] == false) {
                 returnVal4 = String.valueOf(VALUE_TRUE);
                 bitArray[3] = true;
@@ -241,7 +243,7 @@ public class Device {
      *
      * @return rendering that reveals partial state
      */
-  //  @Override
+    @Override
     public String toString() {
         return null;
     }

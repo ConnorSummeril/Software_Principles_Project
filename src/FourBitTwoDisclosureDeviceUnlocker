@@ -19,9 +19,8 @@ public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
      * false otherwise
      **/
     public static void main(String[] args){
-        boolean[] test = {true, false, true, true};
+        boolean[] test = {false, true, true, false};
         Device d = new Device(test, 2);
-        unlock(d);
 
     }
     public static boolean unlock(Device dev) {
@@ -37,7 +36,7 @@ public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
         } else {
             while(unlocked == false && count < MAX)  {
                 // this is one algorith
-                dev.spin();
+                dev.peek([??--]);
                 dev.peek("??--");
                 dev.poke("TT--");
                 unlocked = dev.spin();
