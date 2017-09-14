@@ -4,6 +4,8 @@
  * @author hollyradcliffe
  * @author Mohammad Shahid Foy
  * @author Said Robley
+ * @author Connor J. Summeril
+ * @author Ian Merrill
  *
  **/
 public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
