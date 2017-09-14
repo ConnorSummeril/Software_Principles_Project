@@ -65,95 +65,9 @@ public class Device
     private void rotateBits() {
         int randomNum = (int) (Math.random() * 11);
         int tracker = 0;
-        System.out.println("The Random Number: " + randomNum);
         while(tracker < randomNum) {
             this.rotateOnce();
             tracker++;		
-        }
-    }
-
-    public CharSequence peek(CharSequence pattern) {
-        System.out.println(pattern);
-
-        CharSequence returnVal1 = "-";
-        CharSequence returnVal2 = "-";
-        CharSequence returnVal3 = "-";
-        CharSequence returnVal4 = "-";
-
-        if(pattern.charAt(0) == '?'){
-            if(bitArray[0] == false) {
-                returnVal1 =  String.valueOf(VALUE_FALSE);
-                
-            } else {
-                returnVal1 = String.valueOf(VALUE_TRUE);
-                
-            }
-        }
-
-        if(pattern.charAt(1) == '?'){
-            if(bitArray[1] == false) {
-                returnVal2 =  String.valueOf(VALUE_FALSE);
-                
-            } else {
-                returnVal2 = String.valueOf(VALUE_TRUE);
-                
-            }
-        }
-
-        if(pattern.charAt(2) == '?'){
-            if(bitArray[2] == false) {
-                returnVal3 =  String.valueOf(VALUE_FALSE);
-                
-            } else {
-                returnVal3 = String.valueOf(VALUE_TRUE);
-                            }
-        }
-
-        if(pattern.charAt(3) == '?'){
-            if(bitArray[3] == false) {
-                returnVal4 =  String.valueOf(VALUE_FALSE);
-            } else {
-                returnVal4 = String.valueOf(VALUE_TRUE);
-            }
-        }
-
-        return "["+returnVal1+ " "+returnVal2+" "+returnVal3+" "+returnVal4+"]";
-    }
-
-    public void poke(CharSequence pattern) {
-        System.out.println(pattern);
-
-        CharSequence returnVal1 = "-";
-        CharSequence returnVal2 = "-";
-        CharSequence returnVal3 = "-";
-        CharSequence returnVal4 = "-";
-
-        if(pattern.charAt(0) == 'T'){
-            if(bitArray[0] == false) {
-                returnVal1 = String.valueOf(VALUE_TRUE);
-                bitArray[0] = true;
-            }
-        }
-
-        if(pattern.charAt(1) == 'T'){
-            if(bitArray[1] == false) {
-                returnVal2 = String.valueOf(VALUE_TRUE);
-                bitArray[1] = true;
-            }
-        }
-
-        if(pattern.charAt(2) == 'T'){
-            if(bitArray[2] == false) {
-                returnVal3 = String.valueOf(VALUE_TRUE);
-                bitArray[2] = true;
-            }
-        }
-
-        if(pattern.charAt(3) == 'T'){
-            if(bitArray[3] == false) {
-                returnVal4 = String.valueOf(VALUE_TRUE);
-                bitArray[3] = true;
-            }
         }
     }
 
