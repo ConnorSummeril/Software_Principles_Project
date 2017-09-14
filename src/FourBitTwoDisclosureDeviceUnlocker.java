@@ -3,6 +3,7 @@ import java.util.Random;
  * Solution development for 4bit/2-disclosure device.
  * @version 4.1.5
  * @author hollyradcliffe
+ * @author Mohammad Shahid Foy
  *
  **/
 public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
