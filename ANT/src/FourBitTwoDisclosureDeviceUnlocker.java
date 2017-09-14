@@ -3,6 +3,7 @@
  * @version 4.1.5
  * @author hollyradcliffe
  * @author Mohammad Shahid Foy
+ * @author Said Robley
  *
  **/
 public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
