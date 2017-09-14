@@ -13,12 +13,12 @@ public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
     /**
      * Unlocks a resource controlled by
      * a 4bit/2-disclosure device. Behavior
-     * is unspecified if paramter is not a
+     * is unspecified if parameter is not a
      * reference to a valid 4bit/2-disclosure device.
      * @param dev the device controlling the resource
      * to unlock; must be a 4-bit device with 2
      * peek/poke bits.
-     * @return true if the resource ius successfully
+     * @return true if the resource is successfully
      * unlocked (all bits are now identical);
      * false otherwise
      **/
@@ -72,11 +72,11 @@ public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
             }
         }
     }
-    public static int getRand1(){
+    private static int getRand1(){
         Random rand = new Random();
         return rand.nextInt(3);
     }
-    public static int getRand2(){
+    private static int getRand2(){
         Random rand = new Random();
         return rand.nextInt(3) + 1;
     }
