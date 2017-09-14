@@ -5,6 +5,8 @@ import java.util.Random;
  * @author hollyradcliffe
  * @author Mohammad Shahid Foy
  * @author Connor J. Summeril
+ * @author Said Robley
+ * @author Ian Merrill
  *
  **/
 public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
