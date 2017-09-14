@@ -78,6 +78,5 @@ public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
         Random rand = new Random();
         return rand.nextInt(3) + 1;
     }
-
 }
 
