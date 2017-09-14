@@ -2,7 +2,7 @@
 * This device spins in a sequence which is sinusoidal.
 */
 
-public class SinusoidalDevice extends Device {
+public class SinusoidalDevice extends CustomDevice {
 
     private int sineWave[] = {3, 4, 5, 6, 5, 4, 3, 2, 1, 0, 1, 2};
     private int sinePosition = 0;
