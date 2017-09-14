@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ArrayList;
+import java.lang.reflect.Field;
 
 /**
 * Unittest for testing the device unlocker.
@@ -81,6 +82,21 @@ public class DeviceUnlockerTest {
         // Assert
         for (boolean success : successes) {
             assertTrue(success);
+        }
+    }
+    @Test
+    public void fieldTest() {
+    	try {
+	    Class<?> c = Class.forName(args[0]);
+	    Field f = c.getField(args[1]);
+	    System.out.format("Type: %s%n", f.getType());
+	    System.out.format("GenericType: %s%n", f.getGenericType());
+
+            // production code should handle these exceptions more gracefully
+        } catch (ClassNotFoundException x) {
+            x.printStackTrace();
+        } catch (NoSuchFieldException x) {
+            x.printStackTrace();
         }
     }
 }
