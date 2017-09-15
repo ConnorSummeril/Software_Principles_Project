@@ -90,9 +90,3 @@ import java.util.Random;
     }
 }
 
-class Constructor
-{
-    public static void main(String[]args) {
-        FourBitTwoDisclosureDeviceUnlocker tester = new FourBitTwoDisclosureDeviceUnlocker();
-    }
-}
