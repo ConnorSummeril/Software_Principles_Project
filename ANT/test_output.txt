@@ -1,0 +1,243 @@
+BUILD SUCCESSFUL
+Total time: 3 seconds
+root@DebianVM:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT# ant test
+Buildfile: /media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/build.xml
+
+init:
+
+compile:
+
+test:
+    [junit] Running DeviceUnlockerTest
+    [junit] Testsuite: DeviceUnlockerTest
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.239 sec
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.239 sec
+    [junit] 
+    [junit] Testcase: PerformanceTest took 6.021 sec
+    [junit] 	FAILED
+    [junit] null
+    [junit] junit.framework.AssertionFailedError
+    [junit] 	at DeviceUnlockerTest.PerformanceTest(DeviceUnlockerTest.java:131)
+    [junit] 
+    [junit] Testcase: DefaultConstructUnlockTest took 0 sec
+    [junit] Testcase: AllConstructorPermutationsTest took 0 sec
+    [junit] Test DeviceUnlockerTest FAILED
+
+BUILD SUCCESSFUL
+Total time: 9 seconds
+root@DebianVM:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT# ant test
+Buildfile: /media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/build.xml
+
+init:
+
+compile:
+    [javac] Compiling 1 source file to /media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/build
+
+test:
+    [junit] Running DeviceUnlockerTest
+    [junit] Testsuite: DeviceUnlockerTest
+    [junit] 516440
+    [junit] 1405863
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.186 sec
+    [junit] Output:
+    [junit] 516440
+    [junit] 1405863
+    [junit] 
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.186 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] 516440
+    [junit] 1405863
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: PerformanceTest took 6.028 sec
+    [junit] 	FAILED
+    [junit] null
+    [junit] junit.framework.AssertionFailedError
+    [junit] 	at DeviceUnlockerTest.PerformanceTest(DeviceUnlockerTest.java:133)
+    [junit] 
+    [junit] Testcase: DefaultConstructUnlockTest took 0 sec
+    [junit] Testcase: AllConstructorPermutationsTest took 0 sec
+    [junit] Test DeviceUnlockerTest FAILED
+
+BUILD SUCCESSFUL
+Total time: 11 seconds
+root@DebianVM:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT# ant test
+Buildfile: /media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/build.xml
+
+init:
+
+compile:
+
+test:
+    [junit] Running DeviceUnlockerTest
+    [junit] Testsuite: DeviceUnlockerTest
+    [junit] 667146
+    [junit] 1533472
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.235 sec
+    [junit] Output:
+    [junit] 667146
+    [junit] 1533472
+    [junit] 
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.235 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] 667146
+    [junit] 1533472
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: PerformanceTest took 6.032 sec
+    [junit] 	FAILED
+    [junit] null
+    [junit] junit.framework.AssertionFailedError
+    [junit] 	at DeviceUnlockerTest.PerformanceTest(DeviceUnlockerTest.java:133)
+    [junit] 
+    [junit] Testcase: DefaultConstructUnlockTest took 0.001 sec
+    [junit] Testcase: AllConstructorPermutationsTest took 0 sec
+    [junit] Test DeviceUnlockerTest FAILED
+
+BUILD SUCCESSFUL
+Total time: 9 seconds
+root@DebianVM:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT# ant test
+Buildfile: /media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/build.xml
+
+init:
+
+compile:
+
+test:
+    [junit] Running DeviceUnlockerTest
+    [junit] Testsuite: DeviceUnlockerTest
+    [junit] 722440
+    [junit] 1509409
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.238 sec
+    [junit] Output:
+    [junit] 722440
+    [junit] 1509409
+    [junit] 
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.238 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] 722440
+    [junit] 1509409
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: PerformanceTest took 6.026 sec
+    [junit] 	FAILED
+    [junit] null
+    [junit] junit.framework.AssertionFailedError
+    [junit] 	at DeviceUnlockerTest.PerformanceTest(DeviceUnlockerTest.java:133)
+    [junit] 
+    [junit] Testcase: DefaultConstructUnlockTest took 0.001 sec
+    [junit] Testcase: AllConstructorPermutationsTest took 0.001 sec
+    [junit] Test DeviceUnlockerTest FAILED
+
+BUILD SUCCESSFUL
+Total time: 9 seconds
+root@DebianVM:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT# ant test
+Buildfile: /media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/build.xml
+
+init:
+
+compile:
+    [javac] Compiling 1 source file to /media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/build
+
+test:
+    [junit] Running DeviceUnlockerTest
+    [junit] Testsuite: DeviceUnlockerTest
+    [junit] 4394883
+    [junit] 6925099
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 30.202 sec
+    [junit] Output:
+    [junit] 4394883
+    [junit] 6925099
+    [junit] 
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 30.202 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] 4394883
+    [junit] 6925099
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: PerformanceTest took 30.026 sec
+    [junit] 	FAILED
+    [junit] null
+    [junit] junit.framework.AssertionFailedError
+    [junit] 	at DeviceUnlockerTest.PerformanceTest(DeviceUnlockerTest.java:133)
+    [junit] 
+    [junit] Testcase: DefaultConstructUnlockTest took 0 sec
+    [junit] Testcase: AllConstructorPermutationsTest took 0 sec
+    [junit] Test DeviceUnlockerTest FAILED
+
+BUILD SUCCESSFUL
+Total time: 35 seconds
+root@DebianVM:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT# ant test
+Buildfile: /media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/build.xml
+
+init:
+
+compile:
+    [javac] Compiling 1 source file to /media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/build
+
+test:
+    [junit] Running DeviceUnlockerTest
+    [junit] Testsuite: DeviceUnlockerTest
+    [junit] 6498798
+    [junit] 10068111
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 40.213 sec
+    [junit] Output:
+    [junit] 6498798
+    [junit] 10068111
+    [junit] 
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 40.213 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] 6498798
+    [junit] 10068111
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: PerformanceTest took 40.029 sec
+    [junit] 	FAILED
+    [junit] null
+    [junit] junit.framework.AssertionFailedError
+    [junit] 	at DeviceUnlockerTest.PerformanceTest(DeviceUnlockerTest.java:133)
+    [junit] 
+    [junit] Testcase: DefaultConstructUnlockTest took 0.001 sec
+    [junit] Testcase: AllConstructorPermutationsTest took 0 sec
+    [junit] Test DeviceUnlockerTest FAILED
+
+BUILD SUCCESSFUL
+Total time: 45 seconds
+root@DebianVM:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT# ant test
+Buildfile: /media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/build.xml
+
+init:
+
+compile:
+    [javac] Compiling 1 source file to /media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/build
+
+test:
+    [junit] Running DeviceUnlockerTest
+    [junit] Testsuite: DeviceUnlockerTest
+    [junit] 97489513
+    [junit] 155421799
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 600.211 sec
+    [junit] Output:
+    [junit] 97489513
+    [junit] 155421799
+    [junit] 
+    [junit] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 600.211 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] 97489513
+    [junit] 155421799
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: PerformanceTest took 600.033 sec
+    [junit] 	FAILED
+    [junit] null
+    [junit] junit.framework.AssertionFailedError
+    [junit] 	at DeviceUnlockerTest.PerformanceTest(DeviceUnlockerTest.java:133)
+    [junit] 
+    [junit] Testcase: DefaultConstructUnlockTest took 0 sec
+    [junit] Testcase: AllConstructorPermutationsTest took 0 sec
+    [junit] Test DeviceUnlockerTest FAILED
+
+BUILD SUCCESSFUL
+Total time: 10 minutes 5 seconds
+root@DebianVM:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT# 
+

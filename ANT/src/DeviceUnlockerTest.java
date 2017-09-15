@@ -1,15 +1,14 @@
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.fail;
 import org.junit.Test;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ArrayList;
+import java.math.BigDecimal;
+import java.util.concurrent.TimeUnit;
 
 /**
 * Unittest for testing the device unlocker.
@@ -83,5 +82,57 @@ public class DeviceUnlockerTest {
             assertTrue(success);
         }
     }
+    
+    /**
+     * Validate that the general algorithm is superior to a basic
+     * algorithm.
+     */
+    @Test
+    public void PerformanceTest() {
+        // Arrange
+        int runTime = 60000*5; //1 minute in millis * minutes
+        long secondaryTime = System.currentTimeMillis();
+        BigDecimal generalAlgorithmSuccesses = new BigDecimal(0);
+        BigDecimal simpleAlgorithmSuccesses = new BigDecimal(0);
+        // Act
+        long endTime = System.currentTimeMillis() + runTime;
+        Boolean success = false;
+        ArrayList<boolean[]> permutations = getPermutations();
+        int permutationPosition = 0;
+        while (System.currentTimeMillis() <= endTime) {
+            if (permutationPosition == permutations.size()) {
+                permutationPosition = 0;
+            }
+            Device testDevice = new Device(permutations.get(permutationPosition),
+                                           Device.DEFAULT_PEEKS);
+            success = FourBitTwoDisclosureDeviceUnlocker.unlock(testDevice);
+            if (success) { 
+                generalAlgorithmSuccesses = generalAlgorithmSuccesses
+                                            .add(new BigDecimal(1));
+            }
+            permutationPosition++;
+        }
+        endTime = System.currentTimeMillis() + runTime;
+        permutationPosition = 0;
+        while (System.currentTimeMillis() <= endTime) {
+            if (permutationPosition == permutations.size()) {
+                permutationPosition = 0;
+            }
+            Device testDevice = new Device(permutations.get(permutationPosition),
+                                           Device.DEFAULT_PEEKS);
+            success = SimpleDeviceUnlocker.unlock(testDevice);
+            if (success) {
+                simpleAlgorithmSuccesses = simpleAlgorithmSuccesses
+                                           .add(new BigDecimal(1));
+            }
+            permutationPosition++;
+        }
+        // Assert
+        System.out.println(generalAlgorithmSuccesses.toString());
+        System.out.println(simpleAlgorithmSuccesses.toString());
+        assertTrue(generalAlgorithmSuccesses.compareTo(simpleAlgorithmSuccesses) >= 0);
+        
+    }
+    
 }
 
