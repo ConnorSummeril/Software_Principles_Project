@@ -1,15 +1,21 @@
 import java.util.Random;
 /**
  * Solution development for 4bit/2-disclosure device.
- * @version 4.1.5
  * @author Holly Radcliffe
  * @author Mohammad Shahid Foy
  * @author Connor J. Summeril
  * @author Said Robley
  * @author Ian Merrill
+ * @author Dr. Jody Paul
+ * @version 4.1.5
  *
  **/
-public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
+
+
+ public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
+
+    private void FourBitTwoDisclosureDeviceUnlocker() {}
+
     /**
      * Unlocks a resource controlled by
      * a 4bit/2-disclosure device. Behavior
@@ -22,6 +28,8 @@ public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
      * unlocked (all bits are now identical);
      * false otherwise
      **/
+    
+
     public static boolean unlock(Device dev) {
         int count = 0;
         final int MAX = 100000;
@@ -82,3 +90,9 @@ public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
     }
 }
 
+class Constructor
+{
+    public static void main(String[]args) {
+        FourBitTwoDisclosureDeviceUnlocker tester = new FourBitTwoDisclosureDeviceUnlocker();
+    }
+}
