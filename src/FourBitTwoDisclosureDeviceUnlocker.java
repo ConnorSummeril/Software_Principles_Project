@@ -14,7 +14,6 @@ import java.util.Random;
 
  public class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
 
-    private void FourBitTwoDisclosureDeviceUnlocker() {}
 
     /**
      * Unlocks a resource controlled by
