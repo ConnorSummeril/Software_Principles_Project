@@ -1,6 +1,6 @@
-import static org.junit.Assert.assertThat;
-import static org.hamcrest.core.Is.is;
 
+import org.hamcrest.core.Is;
+import org.junit.Assert;
 import org.junit.Test;
 
 
@@ -26,8 +26,7 @@ public class UnlockerRace {
         long endTime = System.nanoTime();
 
         long duration = (endTime - startTime);
-        double seconds = (double) duration/ 1000000000.0;
-        System.out.println("FourBitTwoDisclosure finishes unlocking 5 devices in : " + seconds + " seconds");
+        System.out.println("FourBitTwoDisclosure finishes unlocking 5 devices in : " + duration + " nano seconds");
     }
 
     @Test
@@ -51,7 +50,6 @@ public class UnlockerRace {
         long endTime = System.nanoTime();
 
         long duration = (endTime - startTime);
-        double seconds = (double) duration/ 1000000000.0;
-        System.out.println("FourBitTwoDisclosure finishes unlocking 5 devices in : " + seconds + " seconds");
+        System.out.println("SimpleDeviceUnlocker finishes unlocking 5 devices in : " + duration + " nano seconds");
     }
 }
