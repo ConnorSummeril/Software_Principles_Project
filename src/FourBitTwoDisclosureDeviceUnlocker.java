@@ -26,9 +26,9 @@ import java.util.Random;
      * false otherwise
      **/
     
-    //private FourBitTwoDisclosureDeviceUnlocker() {
+    private FourBitTwoDisclosureDeviceUnlocker() {
             
-    //} 
+    } 
 
     public static boolean unlock(Device dev) {
             int count = 0;
