@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class UnlockerRace {
+public class UnlockerRaceTest {
 
     @Test
     public void originalTimer() throws Exception {
