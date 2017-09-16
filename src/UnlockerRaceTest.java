@@ -37,6 +37,7 @@ public class UnlockerRaceTest {
         Device device = new Device();
         CustomDevice random = new CustomDevice();
         DeviceShift1 shift1 = new DeviceShift1();
+        DeviceShift1 balance = new DeviceShift1();
         DeviceShift2 shift2 = new DeviceShift2();
         DeviceShift3 shift3 = new DeviceShift3();
         DeviceNeverShift never = new DeviceNeverShift();
@@ -49,7 +50,7 @@ public class UnlockerRaceTest {
         Assert.assertThat(unlocker.unlock(shift2), Is.is(true));
         Assert.assertThat(unlocker.unlock(shift3), Is.is(true));
        // assertThat(unlocker.unlock(never), is(true)); the never shift device will not be unlocked with simple algorithm
-        Assert.assertThat(unlocker.unlock(shift1), Is.is(true)); //added another shift1 device for fairness.
+        Assert.assertThat(unlocker.unlock(balance), Is.is(true)); //added another shift1 device for fairness.
         Assert.assertThat(unlocker.unlock(sinusoidal), Is.is(true));
         long endTime = System.nanoTime();
 
