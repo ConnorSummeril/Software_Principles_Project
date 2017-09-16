@@ -5,6 +5,10 @@ public class DeviceNeverShift extends CustomDevice {
 
     @Override
     public boolean spin() {
-        return super.spin();
+        if (super.isUnlocked()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

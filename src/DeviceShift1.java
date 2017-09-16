@@ -6,6 +6,11 @@ public class DeviceShift1 extends CustomDevice {
 
     @Override
     public boolean spin() {
-        return super.spin();
+        if (super.isUnlocked()) {
+            return true;
+        } else {
+            super.rotateOnce();
+            return false;
+        }
     }
 }

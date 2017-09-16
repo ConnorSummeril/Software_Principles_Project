@@ -37,7 +37,7 @@ public class CustomDevice {
     /**
      * Return true if the device bitArray is unlocked, false otherwise.
      */
-    private boolean isUnlocked() {
+    protected boolean isUnlocked() {
         int countFalse = 0;
         int countTrue = 0;
         for (int i = 0; i < DEFAULT_SIZE; i++) {
@@ -62,7 +62,7 @@ public class CustomDevice {
     /**
      * Rotate the "bits" in the internal boolean array in some fashion.
      */
-    private void rotateBits() {
+    protected void rotateBits() {
         int randomNum = (int) (Math.random() * 11);
         int tracker = 0;
         while (tracker < randomNum) {
