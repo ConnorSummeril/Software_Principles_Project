@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class CustomDevice {
     public static final int DEFAULT_SIZE = 4;
     public static final int DEFAULT_PEEKS = 2;
@@ -8,7 +10,16 @@ public class CustomDevice {
     private int thebits = DEFAULT_PEEKS;
 
     public CustomDevice() {
-        // Values are already initialized for the default device.
+        Random rand = new Random();
+        int choice;
+        for (int i = 0; i < bitArray.length; i++) {
+            choice = rand.nextInt(2);
+            if (choice == 0) {
+                bitArray[i] = true;
+            } else {
+                bitArray[i] = false;
+            }
+        }
     }
 
     public CustomDevice(boolean[] initialBits, int bitsPerPeek) {
