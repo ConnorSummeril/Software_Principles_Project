@@ -26,9 +26,9 @@ import java.util.Random;
      * false otherwise
      **/
     
-    private FourBitTwoDisclosureDeviceUnlocker() {
+    //private FourBitTwoDisclosureDeviceUnlocker() {
             
-    } 
+    //} 
 
     public static boolean unlock(Device dev) {
             int count = 0;
@@ -52,22 +52,29 @@ import java.util.Random;
 
                     if(rand1 == 0 && rand2 == 1){
                        values =  dev.peek("??--");
+                       log("peek: " + values);
                        dev.poke("TT--");
                     } else if(rand1 == 0 && rand2 == 2){
                        values =  dev.peek("?-?-");
+                       log("peek: " + values);
                        dev.poke("T-T-");
                     } else if(rand1 == 0 && rand2 == 3){
                        values=  dev.peek("?--?");
+                       log("peek: " + values);
                        dev.poke("T--T");
                     }else if(rand1 == 1 && rand2==2){
                        values = dev.peek("-??-");
+                       log("peek: " + values);
                        dev.poke("-TT-");
                     } else if(rand1 == 1 && rand2==3){
                        values = dev.peek("-?-?");
-                       dev.poke("-T-T");
+                       log("peek: " + values);
+                       dev.poke("-T-T");  
                     } else if(rand1 == 2 && rand2 == 3){
                        values =  dev.peek("--??");
+                       log("peek: " + values);
                        dev.poke("--TT");
+                       
                     }
 
                     unlocked = dev.spin();
