@@ -20,9 +20,7 @@ import java.util.Random;
      * reference to a valid 4bit/2-disclosure device.
      *
      **/
-    
     private FourBitTwoDisclosureDeviceUnlocker() {
-            
     } 
 
     /**
@@ -92,15 +90,22 @@ import java.util.Random;
             }
         }
 
-        private static int getRand1(){
-            Random rand = new Random();
-            return rand.nextInt(3);
-        }
+    /**
+     * Randomized peeking helper.
+     * @return a value from 0-2
+     */
+    private static int getRand1(){
+        Random rand = new Random();
+        return rand.nextInt(3);
+    }
 
-        private static int getRand2(){
-            Random rand = new Random();
-            return rand.nextInt(3) + 1;
-        }
-   
+    /**
+     * Randomized peeking helper.
+     * @return a value from 1-3
+     */
+    private static int getRand2(){
+        Random rand = new Random();
+        return rand.nextInt(3) + 1;
+    }
 }
 
