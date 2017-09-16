@@ -8,7 +8,7 @@ import java.util.Random;
  * @author Ian Merrill
  * @author Dr. Jody Paul
  * @version 4.1.5
- *
+ * @see <a href="http://jodypaul.com/cs/sweprin/deviceProj/projectDescription.html">Project Description</a>
  **/
 
  public final class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
@@ -18,6 +18,15 @@ import java.util.Random;
      * a 4bit/2-disclosure device. Behavior
      * is unspecified if parameter is not a
      * reference to a valid 4bit/2-disclosure device.
+     *
+     **/
+    
+    private FourBitTwoDisclosureDeviceUnlocker() {
+            
+    } 
+
+
+    /**
      * @param dev the device controlling the resource
      * to unlock; must be a 4-bit device with 2
      * peek/poke bits.
@@ -25,10 +34,6 @@ import java.util.Random;
      * unlocked (all bits are now identical);
      * false otherwise
      **/
-    
-    private FourBitTwoDisclosureDeviceUnlocker() {
-            
-    } 
 
     public static boolean unlock(Device dev) {
             int count = 0;
@@ -62,11 +67,11 @@ import java.util.Random;
                        values=  dev.peek("?--?");
                        log("peek: " + values);
                        dev.poke("T--T");
-                    }else if(rand1 == 1 && rand2==2){
+                    }else if(rand1 == 1 && rand2 == 2){
                        values = dev.peek("-??-");
                        log("peek: " + values);
                        dev.poke("-TT-");
-                    } else if(rand1 == 1 && rand2==3){
+                    } else if(rand1 == 1 && rand2 == 3){
                        values = dev.peek("-?-?");
                        log("peek: " + values);
                        dev.poke("-T-T");  
