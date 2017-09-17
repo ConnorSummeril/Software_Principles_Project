@@ -75,7 +75,7 @@ import java.util.Random;
         return rand.nextInt(3) + 1;
     }
 
-  /**
+    /**
     * Decide which peek positions
     * to check based on randomized values passed.
     */
@@ -94,7 +94,7 @@ import java.util.Random;
             values=  dev.peek("?--?");
             log("peek: " + values);
             dev.poke("T--T");
-         }else if(rand1 == 1 && rand2 == 2){
+         } else if(rand1 == 1 && rand2 == 2){
             values = dev.peek("-??-");
             log("peek: " + values);
             dev.poke("-TT-");
@@ -107,5 +107,6 @@ import java.util.Random;
             log("peek: " + values);
             dev.poke("--TT");
          }
+     
     }
 }
