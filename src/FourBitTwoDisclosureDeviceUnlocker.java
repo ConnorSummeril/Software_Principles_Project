@@ -10,9 +10,7 @@ import java.util.Random;
  * @version 4.1.5
  * @see <a href="http://jodypaul.com/cs/sweprin/deviceProj/projectDescription.html">Project Description</a>
  **/
-
  public final class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
-
     /**
      * Unlocks a resource controlled by
      * a 4bit/2-disclosure device. Behavior
@@ -22,7 +20,6 @@ import java.util.Random;
      **/
     private FourBitTwoDisclosureDeviceUnlocker() {
     } 
-
     /**
     * Unlocks a resource controlled by a 4-bit/2-disclosure device.
     * @param dev the device controlling the resource
@@ -35,50 +32,18 @@ import java.util.Random;
     public static boolean unlock(Device dev) {
             int count = 0;
             final int MAX = 100000;
-
             boolean unlocked = false;
             unlocked = dev.spin();
-
-            CharSequence values = "----";
-
             if(unlocked == true) {
                 return unlocked;
             } else {
                 while(unlocked == false && count < MAX)  {
                     int rand1 = getRand1();
                     int rand2 = getRand2();
-
                     while(rand1 == rand2){
                         rand2 = getRand2();
                     }
-
-                    if(rand1 == 0 && rand2 == 1){
-                       values =  dev.peek("??--");
-                       log("peek: " + values);
-                       dev.poke("TT--");
-                    } else if(rand1 == 0 && rand2 == 2){
-                       values =  dev.peek("?-?-");
-                       log("peek: " + values);
-                       dev.poke("T-T-");
-                    } else if(rand1 == 0 && rand2 == 3){
-                       values=  dev.peek("?--?");
-                       log("peek: " + values);
-                       dev.poke("T--T");
-                    }else if(rand1 == 1 && rand2 == 2){
-                       values = dev.peek("-??-");
-                       log("peek: " + values);
-                       dev.poke("-TT-");
-                    } else if(rand1 == 1 && rand2 == 3){
-                       values = dev.peek("-?-?");
-                       log("peek: " + values);
-                       dev.poke("-T-T");  
-                    } else if(rand1 == 2 && rand2 == 3){
-                       values =  dev.peek("--??");
-                       log("peek: " + values);
-                       dev.poke("--TT");
-                       
-                    }
-
+                    randomizedPeekPoke(rand1, rand2, dev);
                     unlocked = dev.spin();
                     count++;
                 }
@@ -89,7 +54,6 @@ import java.util.Random;
                 }
             }
         }
-
     /**
      * Randomized peeking helper.
      * @return a value from 0-2
@@ -98,7 +62,6 @@ import java.util.Random;
         Random rand = new Random();
         return rand.nextInt(3);
     }
-
     /**
      * Randomized peeking helper.
      * @return a value from 1-3
@@ -107,5 +70,34 @@ import java.util.Random;
         Random rand = new Random();
         return rand.nextInt(3) + 1;
     }
+    private static void randomizedPeekPoke(int rand1, int rand2,
+    		Device dev) {
+            CharSequence values = "----";
+        
+            if(rand1 == 0 && rand2 == 1){
+            values =  dev.peek("??--");
+            log("peek: " + values);
+            dev.poke("TT--");
+         } else if(rand1 == 0 && rand2 == 2){
+            values =  dev.peek("?-?-");
+            log("peek: " + values);
+            dev.poke("T-T-");
+         } else if(rand1 == 0 && rand2 == 3){
+            values=  dev.peek("?--?");
+            log("peek: " + values);
+            dev.poke("T--T");
+         }else if(rand1 == 1 && rand2 == 2){
+            values = dev.peek("-??-");
+            log("peek: " + values);
+            dev.poke("-TT-");
+         } else if(rand1 == 1 && rand2 == 3){
+            values = dev.peek("-?-?");
+            log("peek: " + values);
+            dev.poke("-T-T");  
+         } else if(rand1 == 2 && rand2 == 3){
+            values =  dev.peek("--??");
+            log("peek: " + values);
+            dev.poke("--TT");
+         }
+    }
 }
-
