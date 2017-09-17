@@ -11,6 +11,7 @@ import java.util.Random;
  * @see <a href="http://jodypaul.com/cs/sweprin/deviceProj/projectDescription.html">Project Description</a>
  **/
  public final class FourBitTwoDisclosureDeviceUnlocker extends DeviceUnlocker{
+
     /**
      * Unlocks a resource controlled by
      * a 4bit/2-disclosure device. Behavior
@@ -20,6 +21,7 @@ import java.util.Random;
      **/
     private FourBitTwoDisclosureDeviceUnlocker() {
     } 
+
     /**
     * Unlocks a resource controlled by a 4-bit/2-disclosure device.
     * @param dev the device controlling the resource
@@ -54,6 +56,7 @@ import java.util.Random;
                 }
             }
         }
+
     /**
      * Randomized peeking helper.
      * @return a value from 0-2
@@ -62,6 +65,7 @@ import java.util.Random;
         Random rand = new Random();
         return rand.nextInt(3);
     }
+
     /**
      * Randomized peeking helper.
      * @return a value from 1-3
@@ -70,6 +74,11 @@ import java.util.Random;
         Random rand = new Random();
         return rand.nextInt(3) + 1;
     }
+
+  /**
+    * Decide which peek positions
+    * to check based on randomized values passed.
+    */
     private static void randomizedPeekPoke(int rand1, int rand2,
     		Device dev) {
             CharSequence values = "----";
