@@ -79,11 +79,10 @@ import java.util.Random;
     * Decide which peek positions
     * to check based on randomized values passed.
     */
-    private static void randomizedPeekPoke(int rand1, int rand2,
-    		Device dev) {
-            CharSequence values = "----";
+    private static void randomizedPeekPoke(int rand1, int rand2, Device dev) {
+         CharSequence values = "----";
         
-            if(rand1 == 0 && rand2 == 1){
+         if(rand1 == 0 && rand2 == 1){
             values =  dev.peek("??--");
             log("peek: " + values);
             dev.poke("TT--");
