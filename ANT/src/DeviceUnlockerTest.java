@@ -90,7 +90,7 @@ public class DeviceUnlockerTest {
     @Test
     public void PerformanceTest() {
         // Arrange
-        int runTime = 60000*5; //1 minute in millis * minutes
+        int runTime = 10000; //1 minute in millis * minutes
         long secondaryTime = System.currentTimeMillis();
         BigDecimal generalAlgorithmSuccesses = new BigDecimal(0);
         BigDecimal simpleAlgorithmSuccesses = new BigDecimal(0);

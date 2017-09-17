@@ -1,0 +1,11 @@
+Testsuite: UnlockerRaceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.462 sec
+------------- Standard Output ---------------
+Linear unlocker finishes unlocking 7 devices in : 225353537 nano seconds
+SimpleDeviceUnlocker finishes unlocking 7 devices in : 4575467 nano seconds
+FourBitTwoDisclosure finishes unlocking 7 devices in : 13956324 nano seconds
+------------- ---------------- ---------------
+
+Testcase: linearTimer took 0.252 sec
+Testcase: simpleTimer took 0.005 sec
+Testcase: originalTimer took 0.014 sec

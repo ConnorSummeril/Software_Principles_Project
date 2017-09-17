@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="DebianVM" name="DeviceUnlockerTest" skipped="0" tests="3" time="20.251" timestamp="2017-09-17T17:19:15">
+<testsuite errors="18" failures="0" hostname="DebianVM" name="FourBitTwoTest" skipped="0" tests="18" time="0.423" timestamp="2017-09-17T17:19:36">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="coverage.summaryxml.dir" value="/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/coverage/reports/cobertura-summary-xml" />
@@ -62,7 +62,7 @@
     <property name="java.vendor.url" value="http://java.oracle.com/" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner DeviceUnlockerTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/test/reports/TEST-DeviceUnlockerTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/test/reports/TEST-DeviceUnlockerTest.txt crashfile=/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/junitvmwatcher4890931759524410548.properties propsfile=/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/junit93213030833224237.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner FourBitTwoTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/test/reports/TEST-FourBitTwoTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/test/reports/TEST-FourBitTwoTest.txt crashfile=/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/junitvmwatcher5931305784163806940.properties propsfile=/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/junit8271825627499275101.properties" />
     <property name="java.class.path" value="/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/checkstyle.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/cobertura/asm-5.0.1.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/cobertura/asm-analysis-5.0.1.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/cobertura/asm-commons-5.0.1.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/cobertura/asm-tree-5.0.1.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/cobertura/asm-util-5.0.1.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/cobertura/cobertura-2.1.1.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/cobertura/commons-lang3-3.3.2.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/cobertura/logback-classic-1.0.13.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/cobertura/logback-core-1.0.13.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/cobertura/oro-2.0.8.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/cobertura/slf4j-api-1.7.5.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/hamcrest-core.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/junit-prev.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/lib/junit.jar:/media/sf_DebianVMShare/Repo/Software_Principles_Project/ANT/build:/home/connorjamessummeril/Progs/ant/apache-ant-1.9.7/lib/ant-launcher.jar:/home/connorjamessummeril/Progs/ant/default/lib/ant.jar:/home/connorjamessummeril/Progs/ant/default/lib/ant-junit.jar:/home/connorjamessummeril/Progs/ant/default/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.7 compiled on April 9 2016" />
     <property name="TSTAMP" value="1119" />
@@ -89,15 +89,96 @@
     <property name="java.specification.version" value="1.8" />
     <property name="ant.project.invoked-targets" value="test" />
   </properties>
-  <testcase classname="DeviceUnlockerTest" name="PerformanceTest" time="20.03">
-    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
-	at DeviceUnlockerTest.PerformanceTest(DeviceUnlockerTest.java:133)
-</failure>
+  <testcase classname="FourBitTwoTest" name="testOne" time="0.065">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.testOne(FourBitTwoTest.java:11)
+</error>
   </testcase>
-  <testcase classname="DeviceUnlockerTest" name="DefaultConstructUnlockTest" time="0.002" />
-  <testcase classname="DeviceUnlockerTest" name="AllConstructorPermutationsTest" time="0.016" />
-  <system-out><![CDATA[19757
-5135313
-]]></system-out>
+  <testcase classname="FourBitTwoTest" name="testSix" time="0.002">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.testSix(FourBitTwoTest.java:56)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="testTen" time="0.002">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.testTen(FourBitTwoTest.java:92)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="testTwo" time="0.002">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.testTwo(FourBitTwoTest.java:20)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="testEight" time="0.001">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.testEight(FourBitTwoTest.java:74)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="testSeven" time="0.002">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.testSeven(FourBitTwoTest.java:65)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="testThree" time="0.002">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.testThree(FourBitTwoTest.java:29)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="testFive" time="0.005">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.testFive(FourBitTwoTest.java:47)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="testFour" time="0.001">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.testFour(FourBitTwoTest.java:38)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="testNine" time="0.001">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.testNine(FourBitTwoTest.java:83)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="test11" time="0.001">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.test11(FourBitTwoTest.java:101)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="test12" time="0.001">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.test12(FourBitTwoTest.java:110)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="test13" time="0.002">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.test13(FourBitTwoTest.java:119)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="test14" time="0.001">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.test14(FourBitTwoTest.java:128)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="test15" time="0.001">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.test15(FourBitTwoTest.java:137)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="test16" time="0.001">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.test16(FourBitTwoTest.java:146)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="testDefault1" time="0.001">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.testDefault1(FourBitTwoTest.java:155)
+</error>
+  </testcase>
+  <testcase classname="FourBitTwoTest" name="testDefault2" time="0.001">
+    <error message="tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access method FourBitTwoDisclosureDeviceUnlocker.&lt;init&gt;()V from class FourBitTwoTest
+	at FourBitTwoTest.testDefault2(FourBitTwoTest.java:164)
+</error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,4 +1,4 @@
-public class CustomDevice
+public class CustomDevice extends Device
 {
 	public static final int DEFAULT_SIZE = 4;
 	public static final int DEFAULT_PEEKS = 2;
@@ -38,7 +38,7 @@ public class CustomDevice
     /**
      * Return true if the device bitArray is unlocked, false otherwise.
      */ 
-    private boolean isUnlocked() {
+    boolean isUnlocked() {
 		int countFalse = 0;
 		int countTrue = 0;
         for (int i = 0; i < DEFAULT_SIZE; i++) {
